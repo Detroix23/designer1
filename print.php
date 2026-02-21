@@ -9,17 +9,16 @@
 		<title>Designer1</title>
 		<link rel="icon" type="image/x-icon" href="./favicon.svg" />
 
+		<link rel="stylesheet" 
+		      href="./style/common.css" />
 		<!-- Bootstrap (CSS) -->
 		<link href="./vendor/twbs/bootstrap/dist/css/bootstrap.min.css"
 			  rel="stylesheet" />
-		<link rel="stylesheet" 
-		      href="./style/common.css" />
-
-		<!-- Bootstrap (JS) -->
-		<script src="./vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js" 
+		<script src="./js/common.js"
 				defer>
 		</script>
-		<script src="./js/common.js"
+		<!-- Bootstrap (JS) -->
+		<script src="./vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js" 
 				defer>
 		</script>
 
@@ -68,9 +67,10 @@
 			<!-- Main text -->
 			<div id="ctnr-text" class="bg-light col p-3">
 				<h1 id="ttl-main-title">
-					DESIGNER1 
-					<span class="badge bg-secondary">W.I.P.</span>
+					RENDU
+					<span class="badge bg-warning">Phase 2</span>
 				</h1>
+				<h4 onclick="window.print();"> Test print </h4>
 
 			</div>
 

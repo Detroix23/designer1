@@ -1,0 +1,44 @@
+/* Stylesheet for the designer1 */
+/* Completing BOOTSTRAP5 */
+
+body {
+	min-height: 100vh;
+	
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	font-size: 1rem;
+}
+
+main {
+	height: 100vh;
+	max-height: 100vh;
+	width: 100vw;
+	max-width: 100vw;
+	overflow-x: auto;
+	overflow-y:	hidden;
+
+	padding: 0;
+}
+
+h1 {
+	font-weight: 900 !important;
+}
+
+h2 {
+	font-weight: 600 !important;
+}
+
+.main-col {
+	height: 100%;
+}
+
+.nav-pills {
+	color: white;
+}
+
+.bi {
+	vertical-align: -.125em;
+	pointer-events: none;
+	fill: currentColor;
+}

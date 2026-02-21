@@ -1,4 +1,4 @@
-<!-- Main home page -->
+<!-- Build page -->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -9,17 +9,16 @@
 		<title>Designer1</title>
 		<link rel="icon" type="image/x-icon" href="./favicon.svg" />
 
+		<link rel="stylesheet" 
+		      href="./style/common.css" />
 		<!-- Bootstrap (CSS) -->
 		<link href="./vendor/twbs/bootstrap/dist/css/bootstrap.min.css"
 			  rel="stylesheet" />
-		<link rel="stylesheet" 
-		      href="./style/common.css" />
-
-		<!-- Bootstrap (JS) -->
-		<script src="./vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js" 
+		<script src="./js/common.js"
 				defer>
 		</script>
-		<script src="./js/common.js"
+		<!-- Bootstrap (JS) -->
+		<script src="./vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js" 
 				defer>
 		</script>
 
@@ -68,14 +67,58 @@
 			<!-- Main text -->
 			<div id="ctnr-text" class="bg-light col p-3">
 				<h1 id="ttl-main-title">
-					DESIGNER1 
-					<span class="badge bg-secondary">W.I.P.</span>
+					CONSTRUIRE
+					<span class="badge bg-warning">Phase 1</span>
 				</h1>
+
+				<br>
+
+				<h2 id="ttl-new">Entrer une nouvelle personne</h2>
+
+				<form id="form-new" method="POST">
+					<div class="row mb-3 mt-3">
+						<div class="col">
+							<label for="form-new-first-name" class="form-label">Nom:</label>
+							<input type="text" class="form-control" id="form-new-first-name" placeholder="Duchamp" name="fFirstName">
+						</div>
+						<div class="col">
+							<label for="form-new-last-name" class="form-label">Prénom:</label>
+							<input type="text" class="form-control" id="form-new-last-name" placeholder="Pierre-Marie" name="fLastName">
+						</div>
+					</div>
+					<div class="row mb-3 mt-3">
+						<div class="col">
+							<label for="form-new-email" class="form-label">Email:</label>
+							<input type="email" class="form-control" id="form-new-email" placeholder="email@exemple.com" name="fEmail">
+						</div>
+						<div class="col">
+							<label for="form-new-image" class="form-label">Nom de l'image:</label>
+							<input type="text" class="form-control" id="form-new-image" placeholder="image.png" name="fImage">
+						</div>
+					</div>
+					<div class="mb-3 mt-3">
+						<label for="form-new-quote" class="form-label">Citation:</label>
+						<input type="text" class="form-control" id="form-new-quote" placeholder="Phrase (non requis)" name="fQuote">
+					</div>
+					
+					<button type="submit" class="btn btn-primary">Valider</button>
+
+				</form>
+
+				<br>
+
+				<h2 id="ttl-edit">Modifier les données</h2>
+
+				<form id="form-edit">
+					Edit
+				</form>
 
 			</div>
 
 
 		</main>
+
+
 
 
 
